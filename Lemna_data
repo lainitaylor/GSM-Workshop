@@ -1,0 +1,9 @@
+# Below is the code for our Lemna Growth Data; Code must be copy-pasted into Snippets 
+
+# First, let's create a dataframe of our Lemna count data
+Ldf <- data.frame(
+        salt = c(0, 6.25, 25, 0, 6.25, 25, 0, 6.25, 25, 0, 6.25, 25, 0, 6.25, 25, 0, 6.25, 25),
+        total_t2 = c(211, 532, 95, 140, 216, 104, 295, 379, 115, 322, 323, 166, 177, 248, 130, 163, 438, 103))
+
+# Convert salt variable to a factor
+Ldf$salt <- as.factor(Ldf$salt)
